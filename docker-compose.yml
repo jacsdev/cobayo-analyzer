@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  cobayo-analyzer:
+    image: cobayo-analyzer
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8090:8090" # Exponer el puerto 8090 del contenedor al host
