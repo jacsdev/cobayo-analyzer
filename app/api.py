@@ -25,7 +25,7 @@ def chat(user_message):
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-4",  # Modelo válido de OpenAI
+            model="gpt-4o-mini",  # Modelo válido de OpenAI
             messages=[{"role": "user", "content": user_message}],
             max_tokens=100,  # Limita la cantidad de tokens generados
             temperature=0.2,  # Evita respuestas creativas innecesarias
